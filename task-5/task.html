@@ -1,0 +1,82 @@
+<html>
+<head> 
+<title> TO-DO LIST</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<script src="https://kit.fontawesome.com/001219e6b1.js" crossorigin="anonymous"></script>
+<style>
+th,td {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 15px;
+        padding-right: 40px;
+      }
+     
+body{
+            background-image:url("todo1.png");
+            background-repeat: no-repeat;
+            background-color:black;
+            background-size:1200px;
+            height: 50%;
+            
+        background-position: right;
+        }
+  
+#delete{
+text-align: end;
+      }
+</style>
+</head>
+<body>
+    <div class="container-fluid" style="background-color:white;height: 100px;">
+        
+    <p  style="padding-top: 10px;margin-left: 55px;color:black; font-size: 50px;text-align:center; ">MY TO-DO LIST</p>
+    <p  style="margin-left: 55px;color:black;color:red; font-size: 20px;text-align:center;" id="date"></p>
+    </div>
+    <div class="container" style="padding: left 30px;margin-left: 0px;">
+        <div class="row my-5" >
+            <div class="col-md-4">
+                <div class="card" style="background-color :green;">
+                    <div class="card-body">
+                <table>
+                <form id="form">
+                <tr>
+                  <div style="border-spacing: 2px;padding: 2px;">
+                    <input id="title" cols="50"  maxlength="50" placeholder="Title"></input>
+                  </div></tr>
+                  <tr>
+                  <div style="border-spacing: 5px;padding: 5px;">
+                   <textarea style="resize:none" id="description" placeholder="description"  cols="30" rows="15"></textarea>
+                  </div>
+                  </tr>
+                  <tr>
+                  <div style="border-spacing: 5px;padding: 5px;" >
+                    <button  type="submit" class="btn btn-success">SAVE</button>
+                  </div>
+                  </tr>
+                  </form>
+            </table>
+            </div></div>
+                </div>    
+            <div class="col-md-8">
+                <table width="100%">
+                    <tr>
+                        <th>TITLE</th>
+                        <th>DESCRIPTION</th>
+                     
+                        <th>EDIT</th>
+                        <th id="delete">DELETE</th>
+                    </tr>
+                    <tr>
+                        <td colspan="3"> <hr style=" border-width: 1px;border-color: black;"></hr></td>
+                        </tr>
+                        <tr><td colspan="5"><div id="list"></div></td></tr>
+                </table>
+            </div>
+         </div>
+    
+       
+    </div>
+    <script src="java.js"></script>
+
+</body>
+</html>
